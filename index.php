@@ -5,7 +5,6 @@ include('includes/session.inc');
 $Title=_('Main Menu');
 include('includes/header.inc');
 
-
 /*The module link codes are hard coded in a switch statement below to determine the options to show for each tab */
 include('includes/MainMenuLinksArray.php');
 
@@ -151,7 +150,7 @@ be generated, one for standard reports and the other for custom reports.
 				$Group=explode(':',$Report['groupname']); // break into main group and form group array
 				if ($NoForms AND $Group[0]==$GroupID AND $Report['reporttype']=='frm' AND $Report['defaultreport']==$Def) {
                     //addItem($content,$link,$isActive = null,$class = null,$attributes = null)
-                    $InquiriesMenu->addItem('<img src="' . $RootPath . '/css/' . $_SESSION['Theme'] . '/images/folders.gif" width="16" height="13" alt="" />' . 
+                    $InquiriesMenu->addItem('<img src="' . $MainView->getStyleLink() . '/images/folders.gif" width="16" height="13" alt="" />' . 
                                             '&nbsp;' . $FormGroups[$Report['groupname']],$RootPath . '/reportwriter/FormMaker.php?id=' . $Report['groupname']);
 					$NoForms = false;
 					$NoEntries = false;

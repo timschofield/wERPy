@@ -1,0 +1,16 @@
+[submodule "includes/DoctrineDBAL"]
+	path = includes/DoctrineDBAL
+	url = https://github.com/doctrine/dbal.git
+    branch = 2.4
+[submodule "includes/DataTables"]
+	path = includes/DataTables
+	url = https://github.com/DataTables/DataTables.git
+    branch = 1_9
+    
+[submodule "includes/bootstrap"]
+	path = includes/bootstrap
+	url = https://github.com/twbs/bootstrap.git
+    branch = v3.1.1
+[submodule "includes/Twig"]
+	path = includes/Twig
+	url = https://github.com/fabpot/Twig.git
